@@ -1,5 +1,7 @@
 package assertion;
 
+import assertion.invariant.InvariantExamples;
+
 /**
  * Section c : Exception Handling and Assertions
  * Topic: Using Assertions
@@ -29,6 +31,9 @@ public class AssertionExample {
         System.out.println("Method returns " + aflag.message);
     }
     public static void main(String[] args) {
+
+        InvariantExamples.main(args); //calling a main method from InvariantExample
+
         byte s2;
         short maxValue = Byte.MAX_VALUE + 1; //value exceeds max value
 /*
